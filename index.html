@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平台跳躍冒險</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="mobileControls" class="mobile-controls">
+            <button id="leftBtn">←</button>
+            <button id="rightBtn">→</button>
+            <button id="jumpBtn">跳躍</button>
+        </div>
+        
+        <div id="startScreen" class="screen">
+            <h1>平台跳躍冒險</h1>
+            <button id="startBtn">開始遊戲</button>
+        </div>
+        
+        <div id="levelCompleteScreen" class="screen hidden">
+            <h2>關卡完成！</h2>
+            <p>得分: <span id="levelScore">0</span></p>
+            <button id="nextLevelBtn">下一關</button>
+        </div>
+        
+        <div id="gameOverScreen" class="screen hidden">
+            <h2>遊戲結束</h2>
+            <p>最終得分: <span id="finalScore">0</span></p>
+            <button id="restartBtn">重新開始</button>
+        </div>
+    </div>
+    
+    <script src="js/game.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
